@@ -1,0 +1,13 @@
+<div class="question-text">
+    <div>
+        <div class="floatleft">
+            {{question.questionNumber}}
+        </div>
+        <div class="questionText">
+            {{question.questionText}}
+        </div>
+    </div>
+    <div class="radio">
+        <answer [answer] = "answer" *ngFor="let answer of question.answers"></answer>
+    </div>
+</div>

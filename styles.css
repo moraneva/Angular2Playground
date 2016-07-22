@@ -1,0 +1,39 @@
+h1 {
+  color: #369;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+body {
+  margin: 2em;
+}
+
+#input {
+    -moz-appearance: textfield;
+    -webkit-appearance: textfield;
+    background-color: white;
+    background-color: -moz-field;
+    border: 1px solid darkgray;
+    box-shadow: 1px 1px 1px 0 lightgray inset;  
+    font: -moz-field;
+    font: -webkit-small-control;
+    margin-top: 5px;
+    padding: 2px 3px;
+    width: 800px;
+    height: 950px;    
+}
+
+.floatleft{float:left;}
+
+.questionText {
+    margin-left: 30px;
+    display: block;
+}
+
+.question-text{
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.radio{
+  padding-left: 20px
+}
