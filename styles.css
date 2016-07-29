@@ -32,8 +32,10 @@ body {
 .question-text{
   font-size: 16px;
   line-height: 24px;
+  margin-right: 100px;
+  margin-left: 100px;
 }
 
 .radio{
-  padding-left: 20px
+  padding-left: 40px
 }

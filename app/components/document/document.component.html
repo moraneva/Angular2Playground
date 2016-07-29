@@ -1,0 +1,9 @@
+<div id="input">
+    <div class="col-lg-9">title</div>
+    <div class="col-lg-3">
+        <button (click)="addQuestion()">Add Question</button>
+    </div>
+    <div id="questionContainer">
+    <question [question]="question" *ngFor="let question of questions"></question>
+    </div>
+</div>
