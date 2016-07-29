@@ -1,10 +1,9 @@
 <div class="question-text">
     <div>
         <div class="floatleft">
-            {{question.questionNumber}}
+            {{question.questionNumber }}
         </div>
-        <div class="questionText">
-            {{question.questionText}}
+        <div [innerHTML]="question.questionText" class="questionText">
         </div>
     </div>
     <div class="radio">

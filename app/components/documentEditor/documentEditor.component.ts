@@ -50,12 +50,12 @@ export class DocumentEditorComponent implements OnInit {
     }
 
     ngAfterViewInit() {
-        html2canvas(document.getElementById('input'), {
-        }).then((canvas: HTMLCanvasElement) => {
-            // canvas.width = 300;
-            // canvas.height = 300;
-            document.body.appendChild(canvas);
-        });
+        // html2canvas(document.getElementById('input'), {
+        // }).then((canvas: HTMLCanvasElement) => {
+        //     // canvas.width = 300;
+        //     // canvas.height = 300;
+        //     document.body.appendChild(canvas);
+        // });
     }
 
     clicked(event) {

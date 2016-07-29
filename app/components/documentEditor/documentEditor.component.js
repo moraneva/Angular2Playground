@@ -10,7 +10,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var question_component_1 = require('../question/question.component');
-var html2canvas = require('html2canvas');
 var DocumentEditorComponent = (function () {
     /**
      *
@@ -44,11 +43,12 @@ var DocumentEditorComponent = (function () {
     DocumentEditorComponent.prototype.ngOnInit = function () {
     };
     DocumentEditorComponent.prototype.ngAfterViewInit = function () {
-        html2canvas(document.getElementById('input'), {}).then(function (canvas) {
-            // canvas.width = 300;
-            // canvas.height = 300;
-            document.body.appendChild(canvas);
-        });
+        // html2canvas(document.getElementById('input'), {
+        // }).then((canvas: HTMLCanvasElement) => {
+        //     // canvas.width = 300;
+        //     // canvas.height = 300;
+        //     document.body.appendChild(canvas);
+        // });
     };
     DocumentEditorComponent.prototype.clicked = function (event) {
         var contentEditable = document.createAttribute("contenteditable");
