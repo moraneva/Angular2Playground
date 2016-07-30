@@ -8,6 +8,6 @@ import {AnswerComponent} from '../answer/answer.component';
     directives: [AnswerComponent]
 })
 export class QuestionComponent {
-    @Input() question: Question;
+    @Input() question:Question;
 
 }

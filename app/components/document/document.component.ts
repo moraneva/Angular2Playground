@@ -13,19 +13,19 @@ import * as html2canvas from 'html2canvas';
 })
 export class DocumentComponent implements AfterViewChecked {
 
-    questions: Question[];
+    questions:Question[];
 
     /**
      *
      */
-    constructor(public element: ElementRef, private questionService: QuestionService) {
+    constructor(private questionService:QuestionService) {
         this.questions = questionService.getQuestions();
 
     }
 
     ngAfterViewChecked() {
-        var documentElement: HTMLElement = document.getElementById('input');
-        var questionContainer: HTMLElement = document.getElementById('questionContainer');
+        var documentElement:HTMLElement = document.getElementById('input');
+        var questionContainer:HTMLElement = document.getElementById('questionContainer');
         if (documentElement.offsetHeight < questionContainer.offsetHeight ||
             documentElement.offsetWidth < questionContainer.offsetWidth) {
             var question = this.questions.pop();
