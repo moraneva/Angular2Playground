@@ -1,5 +1,6 @@
-.gitignore
 node_modules/
 typings/
 *.map
 *.js
+!systemjs.config.js
+.idea/

@@ -1,9 +1,10 @@
 import { Injectable } from '@angular/core';
 import {Question} from '../components/question/question';
-import {Answer} from '../components/answer/answer';
+import { Answer } from '../components/answer/answer';
 
 @Injectable()
 export class QuestionService {
+
 
     getQuestions(document): Question[] {
         var testQuestion: Question = {
@@ -14,29 +15,29 @@ export class QuestionService {
             document: document
         };
 
-        testQuestion.answers.push({
-            question: testQuestion,
-            enumerationType: 'a',
-            answerText: 'AAA'
-        },
-            {
-                question: testQuestion,
-                enumerationType: 'a',
-                answerText: 'AAA'
-            },
-            {
-                question: testQuestion,
-                enumerationType: 'a',
-                answerText: 'AAA'
-            },
-            {
-                question: testQuestion,
-                enumerationType: 'a',
-                answerText: 'AAA'
-            });
+		testQuestion.answers.push({
+			question: testQuestion,
+			enumerationType: 'a',
+			answerText: 'AAA'
+		},
+			{
+				question: testQuestion,
+				enumerationType: 'a',
+				answerText: 'AAA'
+			},
+			{
+				question: testQuestion,
+				enumerationType: 'a',
+				answerText: 'AAA'
+			},
+			{
+				question: testQuestion,
+				enumerationType: 'a',
+				answerText: 'AAA'
+			});
 
-        return [testQuestion];
-    };
+		return [testQuestion];
+	};
 
     newTestQuestion(nextId, document): Question {
 
@@ -48,28 +49,28 @@ export class QuestionService {
             document: document
         };
 
-        question.answers.push({
-            question: question,
-            enumerationType: 'a',
-            answerText: 'AAA'
-        },
-            {
-                question: question,
-                enumerationType: 'a',
-                answerText: 'AAA'
-            },
-            {
-                question: question,
-                enumerationType: 'a',
-                answerText: 'AAA'
-            },
-            {
-                question: question,
-                enumerationType: 'a',
-                answerText: 'AAA'
-            });
+		question.answers.push({
+			question: question,
+			enumerationType: 'a',
+			answerText: 'AAA'
+		},
+			{
+				question: question,
+				enumerationType: 'a',
+				answerText: 'AAA'
+			},
+			{
+				question: question,
+				enumerationType: 'a',
+				answerText: 'AAA'
+			},
+			{
+				question: question,
+				enumerationType: 'a',
+				answerText: 'AAA'
+			});
 
-        return question;
-    }
+		return question;
+	}
 
 }

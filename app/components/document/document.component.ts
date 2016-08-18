@@ -38,7 +38,7 @@ export class DocumentComponent implements AfterViewChecked {
     addQuestion() {
 
         var nextId = this.questions[this.questions.length - 1].id + 1;
-        var newQuestion = this.questionService.newTestQuestion(nextId,this.document);
+        var newQuestion = this.questionService.newTestQuestion(nextId, this.document);
 
         this.questions.push(newQuestion);
     }
