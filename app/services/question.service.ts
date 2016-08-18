@@ -5,12 +5,13 @@ import {Answer} from '../components/answer/answer';
 @Injectable()
 export class QuestionService {
 
-    getQuestions(): Question[] {
+    getQuestions(document): Question[] {
         var testQuestion: Question = {
             id: 1,
             questionNumber: "1)",
             questionText: "If A and B are disjoint sets, and A contains 5 elements and B contains 7, how many elements are in the union of A and B?",
-            answers: new Array<Answer>()
+            answers: new Array<Answer>(),
+            document: document
         };
 
         testQuestion.answers.push({
@@ -37,14 +38,14 @@ export class QuestionService {
         return [testQuestion];
     };
 
-    newTestQuestion(nextId): Question {
+    newTestQuestion(nextId, document): Question {
 
         var question: Question = {
             id: nextId,
             questionNumber: nextId + ")",
             questionText: "NEW Question",
-            answers: new Array<Answer>()
-
+            answers: new Array<Answer>(),
+            document: document
         };
 
         question.answers.push({
