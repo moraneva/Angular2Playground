@@ -12,6 +12,26 @@
             <document *ngFor="let document of documents" document="document"></document>
         </div>
         <div class="col-lg-9">
+            <md-card>
+                <md-tab-group>
+                    <md-tab>
+                        <template md-tab-label>
+                            Earth
+                        </template>
+                        <template md-tab-content>
+                            <p>EARTH</p>
+                        </template>
+                    </md-tab>
+                    <md-tab>
+                        <template md-tab-label>
+                            Fire
+                        </template>
+                        <template md-tab-content>
+                            <p>FIRE</p>
+                        </template>
+                    </md-tab>
+                </md-tab-group>
+            </md-card>
             <document document="documents[0]"></document>
         </div>
     </div>

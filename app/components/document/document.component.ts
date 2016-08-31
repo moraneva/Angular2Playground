@@ -4,7 +4,6 @@ import {Answer} from '../answer/answer';
 import {QuestionComponent} from '../question/question.component';
 import {QuestionService} from '../../services/question.service';
 import {Document} from '../document/document';
-import * as html2canvas from 'html2canvas';
 
 @Component({
     selector: 'document',

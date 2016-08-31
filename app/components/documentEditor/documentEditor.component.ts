@@ -2,6 +2,7 @@ import { Component, AfterViewChecked, AfterViewInit } from '@angular/core';
 import {Document} from '../document/document';
 import {DocumentComponent} from '../document/document.component';
 import {DocumentService} from '../../services/document.service';
+
 @Component({
     selector: 'document-editor',
     templateUrl: 'app/components/documentEditor/documentEditor.component.html',
@@ -38,7 +39,5 @@ export class DocumentEditorComponent {
 
         }
     }
-
-
 
 }

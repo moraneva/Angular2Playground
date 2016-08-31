@@ -1,12 +1,8 @@
-import { Component } from '@angular/core';
-import { ROUTER_DIRECTIVES } from '@angular/router';
-import {DocumentEditorComponent} from './components/documentEditor/documentEditor.component';
+import {Component} from '@angular/core';
 
 @Component({
-  selector: 'my-app',
-  templateUrl: 'app/app.component.html',
-  directives: [ROUTER_DIRECTIVES]
-
+    selector: 'my-app',
+    templateUrl: 'app/app.component.html',
 })
 export class AppComponent {
 
